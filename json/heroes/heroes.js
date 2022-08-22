@@ -14,3 +14,9 @@ request.open('GET', requestURL);
 
 request.responseType = 'json';
 request.send();
+
+request.onload = function() {            // After the page is loaded
+  const superHeroes = request.response; 
+  populateHeader(superHeroes);
+  showHeroes(superHeroes);
+}
