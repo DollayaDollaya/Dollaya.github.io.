@@ -33,7 +33,9 @@ while (index < questionArray.length){
 index = 0;
 document.getElementById('p1').innerHTML = questionArray[index].question;
 document.getElementById('p2').innerHTML = questionArray[index].answer;
-document.getElementById('p1').onclick = function() { // Wait for a click to be detected on p1
+
+document.getElementById('p3').onclick = function() { // Wait for a click to be detected on p1
+
 
 if (index == questionArray.length -1) {
   index = 0;
