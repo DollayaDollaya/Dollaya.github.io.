@@ -3,7 +3,7 @@ const section = document.querySelector('section');
 let para1 = document.createElement('p');
 let para2 = document.createElement('p');
 
-let motherInfo = '1 The mother cats are called ';
+let motherInfo = '2 The mother cats are called ';
 let kittenInfo;
 
 fetch('cats.json')
