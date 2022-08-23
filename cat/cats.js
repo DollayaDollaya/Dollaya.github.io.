@@ -3,7 +3,7 @@ const section = document.querySelector('section');
 let para1 = document.createElement('p');
 let para2 = document.createElement('p');
 
-let motherInfo = 'The mother cats are called ';
+let motherInfo = '1 The mother cats are called ';
 let kittenInfo;
 
 fetch('cats.json')
@@ -17,7 +17,7 @@ function displayCatInfo(catString) {
   const cats = JSON.parse(catString);
   let str = '';
 for (let i = 0; i < cats.length; i++) {
-  motherInfo = motherInfo + ' ' + cats[i].name;
+  motherInfo = motherInfo + ' , ' + cats[i].name;
 }
 
 
