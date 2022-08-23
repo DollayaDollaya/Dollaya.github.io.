@@ -17,9 +17,19 @@ function displayCatInfo(catString) {
   const cats = JSON.parse(catString);
   let str = '';
 for (let i = 0; i < cats.length; i++) {
-  motherInfo = motherInfo + ' , ' + cats[i].name;
+  motherInfo = motherInfo + ', ' + cats[i].name;
+  
+for (let j = 0; j < cats[i].kitten.length; j++) {
+ total = total+1;
+  if (cats[i].kitten[j].gender == 'm') {
+  male = male+1;
+}
 }
 
+  
+}
+  let female = total-male;
+kittenInfo = 'There are ' + total + ' kittens.' + 'And there are ' + male + 'male kittens' + 'And there are ' + female + 'female kittens.';
 
 
 
