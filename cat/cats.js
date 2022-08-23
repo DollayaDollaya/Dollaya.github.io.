@@ -3,7 +3,7 @@ const section = document.querySelector('section');
 let para1 = document.createElement('p');
 let para2 = document.createElement('p');
 
-let motherInfo = '2 The mother cats are called ';
+let motherInfo = 'The mother cats are called ';
 let kittenInfo;
 
 fetch('cats.json')
@@ -29,7 +29,7 @@ for (let j = 0; j < cats[i].kittens.length; j++) {
   
 }
   let female = total-male;
-kittenInfo = 'There are ' + total + ' kittens.' + 'And there are ' + male + 'male kittens' + 'And there are ' + female + 'female kittens.';
+kittenInfo = 'There are ' + total + ' kittens.' + ' And there are ' + male + ' male kittens' + ' And there are ' + female + ' female kittens.';
 
 
 
