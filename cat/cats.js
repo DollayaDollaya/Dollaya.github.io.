@@ -29,7 +29,7 @@ for (let j = 0; j < cats[i].kittens.length; j++) {
   
 }
   let female = total-male;
-kittenInfo = 'There are ' + total + ' kittens.' + ' And there are ' + male + ' male kittens' + ' And there are ' + female + ' female kittens.';
+kittenInfo = 'There are ' + total + ' kittens.' + ' They are ' + male + ' male kittens' + ' and ' + female + ' female kittens.';
 
 
 
